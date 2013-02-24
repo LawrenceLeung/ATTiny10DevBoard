@@ -1,0 +1,364 @@
+(PCB "/home/lawrence/Dropbox/Electronics/Eagle/projects/ATTiny10DevBoard/ATTiny10DevBrd.brd"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad CadSoft)
+    (host_version 'EAGLE Version 6.4.0 Copyright (c) 1988-2013 CadSoft')
+  )
+  (resolution inch 254000)
+  (unit inch)
+  (structure
+    (layer "1#Top"  (type signal))
+    (layer "16#Bottom"  (type signal))
+    (boundary 
+      (rect pcb  0.000000 0.000000 1.837008 1.799606)
+    )
+    (boundary (path signal 0 0.000000 0.000000 1.837008 0.000000))
+    (boundary (path signal 0 1.837008 0.000000 1.837008 1.799606))
+    (boundary (path signal 0 1.837008 1.799606 0.000000 1.799606))
+    (boundary (path signal 0 0.000000 1.799606 0.000000 0.000000))
+    (via
+       "Round1$0.021000"
+    )
+    (rule (width 0.010000)(clearance 0.008000))
+    (rule (clearance 0.012000 (type wire_pin)))
+    (rule (clearance 0.012000 (type wire_smd)))
+    (rule (clearance 0.012000 (type wire_via)))
+    (rule (clearance 0.018000 (type pin_pin)))
+    (rule (clearance 0.018000 (type pin_via)))
+    (rule (clearance 0.020000 (type via_via)))
+    (rule (clearance 0.002000 (type smd_pin)))
+    (rule (clearance 0.002000 (type smd_via)))
+    (rule (clearance 0.004000 (type smd_smd)))
+    (control
+      (via_at_smd on)
+    )
+  )
+  (placement
+    (place_control (flip_style rotate_first))
+    (component "C0603$adafruit" 
+      (place "C1" 0.830000 0.810000 Front 90.000000)
+    )
+    (component "C0402$adafruit" 
+      (place "C2" 0.740000 0.810000 Front 90.000000)
+    )
+    (component "C0805$adafruit" 
+      (place "C3" 1.000000 0.860000 Front 180.000000)
+    )
+    (component "PANASONIC_E$LL" 
+      (place "C4" 1.310000 0.710000 Front 90.000000)
+    )
+    (component "UDFN-8$LL" 
+      (place "IC1" 0.530000 0.790000 Front 270.000000)
+    )
+    (component "SOT223$LL" 
+      (place "IC2" 1.100000 1.140000 Front 0.000000)
+    )
+    (component "1X03$adafruit" 
+      (place "JP1" 0.740000 1.050000 Front 0.000000)
+    )
+    (component "1X03$adafruit" 
+      (place "JP2" 0.740000 1.190000 Front 0.000000)
+    )
+    (component "1X01$adafruit" 
+      (place "JP3" 0.190000 0.450000 Front 0.000000)
+    )
+    (component "2X02$pinhead" 
+      (place "JP4" 1.620000 0.700000 Front 270.000000)
+    )
+    (component "2X05$pinhead" 
+      (place "JP5" 0.510000 0.260000 Front 180.000000)
+    )
+    (component "L1812$LL" 
+      (place "L1" 0.970000 0.620000 Front 0.000000)
+    )
+    (component "HEADER_PRG_2X03_ETCH$LL" 
+      (place "PRG" 0.570000 0.540000 Front 180.000000)
+    )
+    (component "R0805$LL" 
+      (place "R1" 0.290000 0.540000 Front 270.000000)
+    )
+  )
+  (library
+    (image "HEADER_PRG_2X03_ETCH$LL"
+    (outline (path signal 0 -0.150000 -0.100000 -0.150000 0.000000))
+    (outline (path signal 0 -0.150000 0.000000 -0.150000 0.100000))
+    (outline (path signal 0 -0.150000 0.100000 0.150000 0.100000))
+    (outline (path signal 0 0.150000 0.100000 0.150000 -0.100000))
+    (outline (path signal 0 0.150000 -0.100000 -0.050000 -0.100000))
+    (outline (path signal 0 -0.050000 -0.100000 -0.150000 -0.100000))
+    (outline (path signal 0 -0.150000 0.000000 -0.050000 0.000000))
+    (outline (path signal 0 -0.050000 -0.100000 -0.050000 0.000000))
+    (outline (path signal 0 -0.176461 -0.122319 -0.211819 -0.122319))
+    (outline (path signal 0 -0.211819 -0.122319 -0.176461 -0.157677))
+    (outline (path signal 0 -0.176461 -0.157677 -0.176461 -0.122319))
+    (outline (path signal 0 -0.229496 -0.118783 -0.172925 -0.175354))
+    (outline (path signal 0 -0.172925 -0.175354 -0.169390 -0.164748))
+    (outline (path signal 0 -0.169390 -0.164748 -0.169390 -0.115248))
+    (outline (path signal 0 -0.169390 -0.115248 -0.229496 -0.118783))
+      (pin "Rectangle1" "1" -0.100000 -0.050000)
+      (pin "Rectangle1" "2" -0.100000 0.050000)
+      (pin "Rectangle1" "3" 0.000000 -0.050000)
+      (pin "Rectangle1" "4" 0.000000 0.050000)
+      (pin "Rectangle1" "5" 0.100000 -0.050000)
+      (pin "Rectangle1" "6" 0.100000 0.050000)
+    )
+    (image "L1812$LL"
+      (pin "Rectangle2" "1" -0.076772 0.000000)
+      (pin "Rectangle2" "2" 0.076772 0.000000)
+    )
+    (image "PANASONIC_E$LL"
+      (pin "Rectangle3" "+" 0.118110 0.000000)
+      (pin "Rectangle3" "-" -0.118110 0.000000)
+    )
+    (image "R0805$LL"
+      (outline(rect "1#Top" 0.016000 -0.027500 0.041591 0.027618))
+      (outline(rect "1#Top" -0.042000 -0.027500 -0.016409 0.027618))
+      (place_keepout(path "1#Top" 0 -0.077677 -0.038701 -0.077677 0.038701 0.077677 0.038701 0.077677 -0.038701 ))
+      (pin "Rectangle4" "1" -0.039370 0.000000)
+      (pin "Rectangle4" "2" 0.039370 0.000000)
+    )
+    (image "SOT223$LL"
+      (pin "Rectangle5" "1" -0.091000 -0.122000)
+      (pin "Rectangle5" "2" 0.000000 -0.122000)
+      (pin "Rectangle5" "3" 0.091000 -0.122000)
+      (pin "Rectangle6" "4" 0.000000 0.122008)
+    )
+    (image "UDFN-8$LL"
+      (outline(circ "1#Top" 0.015748 -0.055118 -0.039370))
+      (pin "Rectangle7" "1" -0.029528 -0.043307)
+      (pin "Rectangle7" "2" -0.009843 -0.043307)
+      (pin "Rectangle7" "3" 0.009843 -0.043307)
+      (pin "Rectangle7" "4" 0.029528 -0.043307)
+      (pin "Rectangle7" "5" 0.029528 0.043307)
+      (pin "Rectangle7" "6" 0.009843 0.043307)
+      (pin "Rectangle7" "7" -0.009843 0.043307)
+      (pin "Rectangle7" "8" -0.029528 0.043307)
+      (pin "Rectangle8" "THERM" 0.000000 0.000000)
+    )
+    (image "1X01$adafruit"
+      (pin "Octagon1" "1" 0.000000 0.000000)
+    )
+    (image "1X03$adafruit"
+      (pin "Round2" "1" -0.100000 0.000000)
+      (pin "Round2" "2" 0.000000 0.000000)
+      (pin "Round2" "3" 0.100000 0.000000)
+    )
+    (image "C0402$adafruit"
+      (place_keepout(path "1#Top" 0 -0.057992 -0.019016 -0.057992 0.019016 0.057992 0.019016 0.057992 -0.019016 ))
+      (pin "Rectangle9" "1" -0.025591 0.000000)
+      (pin "Rectangle9" "2" 0.025591 0.000000)
+    )
+    (image "C0603$adafruit"
+      (place_keepout(path "1#Top" 0 -0.057992 -0.038701 -0.057992 0.038701 0.057992 0.038701 0.057992 -0.038701 ))
+      (pin "Rectangle10" "1" -0.033465 0.000000)
+      (pin "Rectangle10" "2" 0.033465 0.000000)
+    )
+    (image "C0805$adafruit"
+      (place_keepout(path "1#Top" 0 0.077677 0.038701 0.077677 -0.038701 -0.077677 -0.038701 -0.077677 0.038701 ))
+      (pin "Rectangle11" "1" -0.033465 0.000000)
+      (pin "Rectangle11" "2" 0.033465 0.000000)
+    )
+    (image "2X02$pinhead"
+      (pin "Octagon1" "1" -0.050000 -0.050000)
+      (pin "Octagon1" "2" -0.050000 0.050000)
+      (pin "Octagon1" "3" 0.050000 -0.050000)
+      (pin "Octagon1" "4" 0.050000 0.050000)
+    )
+    (image "2X05$pinhead"
+      (pin "Octagon1" "1" -0.200000 -0.050000)
+      (pin "Octagon1" "2" -0.200000 0.050000)
+      (pin "Octagon1" "3" -0.100000 -0.050000)
+      (pin "Octagon1" "4" -0.100000 0.050000)
+      (pin "Octagon1" "5" 0.000000 -0.050000)
+      (pin "Octagon1" "6" 0.000000 0.050000)
+      (pin "Octagon1" "7" 0.100000 -0.050000)
+      (pin "Octagon1" "8" 0.100000 0.050000)
+      (pin "Octagon1" "9" 0.200000 -0.050000)
+      (pin "Octagon1" "10" 0.200000 0.050000)
+    )
+    (padstack "ViaDefault$0.021000"
+      (shape (circle signal 0.057000 0 0))
+    )
+    (padstack "Round1$0.021000" 
+      (shape (circle "1#Top" 0.057000 0 0))
+      (shape (circle "16#Bottom" 0.057000 0 0))
+      (attach off)
+    )
+    (padstack "Rectangle1" 
+      (shape (rect "1#Top" -0.025000 -0.025000 0.025000 0.025000))
+      (attach off)
+    )
+    (padstack "Rectangle2" 
+      (shape (rect "1#Top" -0.037402 -0.066929 0.037402 0.066929))
+      (attach off)
+    )
+    (padstack "Rectangle3" 
+      (shape (rect "1#Top" -0.074803 -0.027559 0.074803 0.027559))
+      (attach off)
+    )
+    (padstack "Rectangle4" 
+      (shape (rect "1#Top" -0.021654 -0.027559 0.021654 0.027559))
+      (attach off)
+    )
+    (padstack "Rectangle5" 
+      (shape (rect "1#Top" -0.024000 -0.044000 0.024000 0.044000))
+      (attach off)
+    )
+    (padstack "Rectangle6" 
+      (shape (rect "1#Top" -0.070866 -0.043307 0.070866 0.043307))
+      (attach off)
+    )
+    (padstack "Rectangle7" 
+      (shape (rect "1#Top" -0.004921 -0.014764 0.004921 0.014764))
+      (attach off)
+    )
+    (padstack "Rectangle8" 
+      (shape (rect "1#Top" -0.070000 -0.015000 0.070000 0.015000))
+      (attach off)
+    )
+    (padstack "Octagon1" 
+      (shape (polygon "1#Top" 0 0.040000 0.016569 0.016569 0.040000 -0.016569 0.040000 -0.040000 0.016569 -0.040000 -0.016569 -0.016569 -0.040000 0.016569 -0.040000 0.040000 -0.016569 ))
+      (shape (polygon "16#Bottom" 0 0.040000 0.016569 0.016569 0.040000 -0.016569 0.040000 -0.040000 0.016569 -0.040000 -0.016569 -0.016569 -0.040000 0.016569 -0.040000 0.040000 -0.016569 ))
+      (attach off)
+    )
+    (padstack "Round2" 
+      (shape (circle signal 0.080000 0 0))
+      (attach off)
+    )
+    (padstack "Rectangle9" 
+      (shape (rect "1#Top" -0.013780 -0.017717 0.013780 0.017717))
+      (attach off)
+    )
+    (padstack "Rectangle10" 
+      (shape (rect "1#Top" -0.021654 -0.019685 0.021654 0.019685))
+      (attach off)
+    )
+    (padstack "Rectangle11" 
+      (shape (rect "1#Top" -0.025591 -0.029528 0.025591 0.029528))
+      (attach off)
+    )
+  )
+  (network
+    (net "+5V"
+      (pins  "JP2"-"3" "JP2"-"2" "JP2"-"1")
+    )
+    (net "GND"
+      (pins  "IC1"-"4" "PRG"-"6" "C2"-"2" "C1"-"2" "JP1"-"3" "JP1"-"2" "JP1"-"1" "IC2"-"1" "C3"-"2" "C4"-"-" "JP4"-"3" "JP4"-"4" "JP5"-"9" "JP5"-"10")
+    )
+    (net "N$2"
+      (pins  "IC1"-"7" "C1"-"1" "C2"-"1" "L1"-"1")
+    )
+    (net "PB2"
+      (pins  "IC1"-"8" "JP5"-"5" "JP5"-"6")
+    )
+    (net "PRGRST"
+      (pins  "PRG"-"5" "IC1"-"6" "R1"-"1")
+    )
+    (net "RST"
+      (pins  "JP3"-"1" "R1"-"2" "JP5"-"8" "JP5"-"7")
+    )
+    (net "TPICLK"
+      (pins  "IC1"-"1" "PRG"-"3" "JP5"-"3" "JP5"-"4")
+    )
+    (net "TPIDATA"
+      (pins  "IC1"-"5" "PRG"-"1" "JP5"-"1" "JP5"-"2")
+    )
+    (net "V+"
+      (pins  "PRG"-"2" "L1"-"2" "IC2"-"2" "C3"-"1")
+    )
+    (net "VIN"
+      (pins  "JP4"-"1" "JP4"-"2" "IC2"-"3" "C4"-"+")
+    )
+  )
+  (wiring
+    (wire
+      (path "1#Top" 0.010000 0.740000 1.190000 0.640000 1.190000) 
+      (net "+5V")
+    )
+    (wire
+      (path "1#Top" 0.010000 0.740000 1.190000 0.840000 1.190000) 
+      (net "+5V")
+    )
+    (wire
+      (path "1#Top" 0.032000 0.400000 0.940000 0.739210 0.927885) 
+      (net "GND")
+    )
+    (wire
+      (path "1#Top" 0.032000 0.739210 0.927885 0.750624 0.927478) 
+      (net "GND")
+    )
+    (wire
+      (path "1#Top" 0.032000 0.750624 0.927478 0.820892 0.924968) 
+      (net "GND")
+    )
+    (wire
+      (path "1#Top" 0.032000 0.820892 0.924968 0.960000 0.920000) 
+      (net "GND")
+    )
+    (wire
+      (path "1#Top" 0.024000 0.740000 1.050000 0.739210 0.927885) 
+      (net "GND")
+    )
+    (wire
+      (path "1#Top" 0.024000 0.740000 1.050000 0.640000 1.050000) 
+      (net "GND")
+    )
+    (wire
+      (path "1#Top" 0.024000 0.740000 1.050000 0.840000 1.050000) 
+      (net "GND")
+    )
+    (wire
+      (path "1#Top" 0.024000 1.009000 1.018000 0.960000 0.920000) 
+      (net "GND")
+    )
+    (wire
+      (path "1#Top" 0.016000 0.830000 0.843465 0.740000 0.843465) 
+      (net "GND")
+    )
+    (wire
+      (path "1#Top" 0.016000 0.740000 0.843465 0.740000 0.835591) 
+      (net "GND")
+    )
+    (wire
+      (path "1#Top" 0.016000 0.470000 0.490000 0.310000 0.310000) 
+      (net "GND")
+    )
+    (wire
+      (path "1#Top" 0.016000 0.470000 0.490000 0.410000 0.500000) 
+      (net "GND")
+    )
+    (wire
+      (path "1#Top" 0.016000 0.410000 0.500000 0.410000 0.750000) 
+      (net "GND")
+    )
+    (wire
+      (path "1#Top" 0.012000 0.410000 0.750000 0.486693 0.760472) 
+      (net "GND")
+    )
+    (wire
+      (poly "1#Top"  0.010000 0.050000 0.040000 1.800000 0.040000 1.800000 1.410000 0.050000 1.410000) 
+      (net "GND")
+    )
+    (wire
+      (poly "16#Bottom"  0.010000 0.050000 0.040000 1.800000 0.040000 1.800000 1.420000 0.050000 1.420000) 
+      (net "GND")
+    )
+    (wire
+      (path "1#Top" 0.010000 1.100000 1.016000 1.084000 0.940000) 
+      (net "V+")
+    )
+    (wire
+      (path "1#Top" 0.010000 1.100000 1.018000 1.100000 1.016000) 
+      (net "V+")
+    )
+    (wire
+      (path "1#Top" 0.010000 1.191000 0.948000 1.191000 1.018000) 
+      (net "VIN")
+    )
+    (wire
+      (path "1#Top" 0.010000 1.194000 0.944000 1.191000 0.948000) 
+      (net "VIN")
+    )
+  )
+)
