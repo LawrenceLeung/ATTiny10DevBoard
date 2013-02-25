@@ -5084,6 +5084,9 @@ wave soldering</description>
 <part name="P+7" library="supply1" deviceset="V+" device=""/>
 <part name="VDD2" library="supply1" deviceset="VDD" device=""/>
 <part name="R4" library="LL" deviceset="R-US_" device="R1206" value="0"/>
+<part name="R5" library="adafruit" deviceset="R-US_" device="R0805" value="50k"/>
+<part name="GND3" library="supply1" deviceset="GND" device=""/>
+<part name="R6" library="adafruit" deviceset="R-US_" device="R0805" value="2k"/>
 </parts>
 <sheets>
 <sheet>
@@ -5100,7 +5103,7 @@ wave soldering</description>
 <instance part="R1" gate="G$1" x="83.82" y="27.94" rot="R90"/>
 <instance part="GND4" gate="1" x="111.76" y="12.7"/>
 <instance part="Q1" gate="G$1" x="48.26" y="68.58"/>
-<instance part="P+6" gate="1" x="50.8" y="81.28"/>
+<instance part="P+6" gate="1" x="50.8" y="93.98"/>
 <instance part="R2" gate="G$1" x="38.1" y="63.5"/>
 <instance part="R3" gate="G$1" x="38.1" y="71.12"/>
 <instance part="P+1" gate="1" x="106.68" y="55.88"/>
@@ -5110,21 +5113,26 @@ wave soldering</description>
 <instance part="P+7" gate="1" x="93.98" y="76.2"/>
 <instance part="VDD2" gate="G$1" x="83.82" y="83.82"/>
 <instance part="R4" gate="G$1" x="7.62" y="50.8"/>
+<instance part="R5" gate="G$1" x="50.8" y="83.82" rot="R90"/>
+<instance part="GND3" gate="1" x="50.8" y="43.18"/>
+<instance part="R6" gate="G$1" x="50.8" y="55.88" rot="R90"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="RST" class="0">
 <segment>
-<pinref part="Q1" gate="G$1" pin="E"/>
-<wire x1="50.8" y1="63.5" x2="50.8" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="60.96" x2="53.34" y2="60.96" width="0.1524" layer="91"/>
-<label x="53.34" y="60.96" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="PRG" gate="J" pin="RST"/>
 <wire x1="88.9" y1="17.78" x2="73.66" y2="17.78" width="0.1524" layer="91"/>
 <label x="73.66" y="17.78" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="Q1" gate="G$1" pin="E"/>
+<wire x1="50.8" y1="60.96" x2="50.8" y2="63.5" width="0.1524" layer="91"/>
+<label x="53.34" y="60.96" size="1.778" layer="95" xref="yes"/>
+<wire x1="50.8" y1="60.96" x2="53.34" y2="60.96" width="0.1524" layer="91"/>
+<junction x="50.8" y="60.96"/>
 </segment>
 </net>
 <net name="TPICLK" class="0">
@@ -5177,6 +5185,11 @@ wave soldering</description>
 <wire x1="111.76" y1="45.72" x2="111.76" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="GND3" gate="1" pin="GND"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="45.72" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+12V" class="0">
 <segment>
@@ -5186,16 +5199,16 @@ wave soldering</description>
 <pinref part="P+3" gate="1" pin="+12V"/>
 </segment>
 <segment>
-<pinref part="Q1" gate="G$1" pin="C"/>
-<wire x1="50.8" y1="73.66" x2="50.8" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="P+6" gate="1" pin="+12V"/>
-</segment>
-<segment>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="0" y1="50.8" x2="2.54" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="12.7" y1="50.8" x2="15.24" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="50.8" x2="2.54" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="P+6" gate="1" pin="+12V"/>
+<wire x1="50.8" y1="88.9" x2="50.8" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="V+" class="0">
@@ -5281,6 +5294,13 @@ wave soldering</description>
 <wire x1="104.14" y1="22.86" x2="106.68" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="22.86" x2="106.68" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="1" pin="+5V"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="Q1" gate="G$1" pin="C"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="73.66" x2="50.8" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
