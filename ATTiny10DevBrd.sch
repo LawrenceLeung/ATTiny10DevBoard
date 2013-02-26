@@ -14418,8 +14418,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="JP5" library="pinhead" deviceset="PINHD-2X5" device=""/>
 <part name="P+4" library="supply1" deviceset="V+" device=""/>
 <part name="R2" library="LL" deviceset="R-US_" device="M1206"/>
-<part name="R5" library="LL" deviceset="R-US_" device="M0805" value="0"/>
-<part name="R3" library="LL" deviceset="R-US_" device="M1206"/>
+<part name="R5" library="LL" deviceset="R-US_" device="R0805" value="0"/>
+<part name="R3" library="LL" deviceset="R-US_" device="M1206" value="0"/>
 <part name="JP6" library="adafruit" deviceset="PINHD-1X1" device=""/>
 <part name="TP1" library="testpad" deviceset="TPSQ" device="TP12R"/>
 <part name="TP2" library="testpad" deviceset="TPSQ" device="TP12R"/>
@@ -14464,7 +14464,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="P+4" gate="1" x="137.16" y="35.56"/>
 <instance part="R2" gate="G$1" x="-10.16" y="81.28"/>
 <instance part="R5" gate="G$1" x="-10.16" y="93.98"/>
-<instance part="R3" gate="G$1" x="-10.16" y="66.04"/>
+<instance part="R3" gate="G$1" x="-10.16" y="71.12"/>
 <instance part="JP6" gate="G$1" x="124.46" y="55.88" rot="R180"/>
 <instance part="TP1" gate="G$1" x="27.94" y="83.82" rot="R180"/>
 <instance part="TP2" gate="G$1" x="25.4" y="73.66" rot="R180"/>
@@ -14517,11 +14517,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <junction x="78.74" y="43.18"/>
 </segment>
 <segment>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="-5.08" y1="66.04" x2="-2.54" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="-15.24" y1="66.04" x2="-17.78" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="66.04" x2="-15.24" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="71.12" x2="-17.78" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="-5.08" y1="71.12" x2="-2.54" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TPICLK" class="0">
