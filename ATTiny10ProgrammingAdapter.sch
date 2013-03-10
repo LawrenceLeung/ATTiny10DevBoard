@@ -5087,6 +5087,8 @@ wave soldering</description>
 <part name="R5" library="adafruit" deviceset="R-US_" device="R0805" value="50k"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="R6" library="adafruit" deviceset="R-US_" device="R0805" value="2k"/>
+<part name="VDD3" library="supply1" deviceset="VDD" device=""/>
+<part name="R7" library="adafruit" deviceset="R-US_" device="R0805" value="2k"/>
 </parts>
 <sheets>
 <sheet>
@@ -5116,6 +5118,8 @@ wave soldering</description>
 <instance part="R5" gate="G$1" x="50.8" y="83.82" rot="R90"/>
 <instance part="GND3" gate="1" x="50.8" y="43.18"/>
 <instance part="R6" gate="G$1" x="50.8" y="55.88" rot="R90"/>
+<instance part="VDD3" gate="G$1" x="60.96" y="81.28"/>
+<instance part="R7" gate="G$1" x="60.96" y="71.12" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -5133,6 +5137,9 @@ wave soldering</description>
 <label x="53.34" y="60.96" size="1.778" layer="95" xref="yes"/>
 <wire x1="50.8" y1="60.96" x2="53.34" y2="60.96" width="0.1524" layer="91"/>
 <junction x="50.8" y="60.96"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="60.96" y1="66.04" x2="53.34" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="66.04" x2="53.34" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TPICLK" class="0">
@@ -5270,6 +5277,11 @@ wave soldering</description>
 <wire x1="76.2" y1="78.74" x2="83.82" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="78.74" x2="83.82" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="VDD2" gate="G$1" pin="VDD"/>
+</segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="VDD3" gate="G$1" pin="VDD"/>
+<wire x1="60.96" y1="76.2" x2="60.96" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">

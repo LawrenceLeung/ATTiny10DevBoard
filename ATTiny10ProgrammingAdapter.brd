@@ -499,15 +499,19 @@ Toner transfer etch tuned DRU
 <element name="R4" library="LL" package="R1206" value="0" x="9.906" y="17.526"/>
 <element name="R5" library="adafruit" package="R0805" value="50k" x="15.494" y="21.336" rot="R180"/>
 <element name="R6" library="adafruit" package="R0805" value="2k" x="19.05" y="14.478" rot="R90"/>
+<element name="R7" library="adafruit" package="R0805" value="2k" x="25.146" y="16.002"/>
 </elements>
 <signals>
 <signal name="RST">
 <contactref element="PRG" pad="5"/>
 <wire x1="24.6126" y1="12.446" x2="24.892" y2="12.446" width="0.254" layer="1"/>
-<wire x1="20.2438" y1="16.8148" x2="24.6126" y2="12.446" width="0.8128" layer="1"/>
+<wire x1="20.2438" y1="16.8148" x2="22.7203" y2="14.3383" width="0.8128" layer="1"/>
 <contactref element="R6" pad="2"/>
 <contactref element="Q1" pad="2"/>
+<wire x1="22.7203" y1="14.3383" x2="24.6126" y2="12.446" width="0.8128" layer="1"/>
 <wire x1="20.2438" y1="16.8148" x2="19.05" y2="15.478" width="0.6096" layer="1"/>
+<contactref element="R7" pad="1"/>
+<wire x1="24.146" y1="16.002" x2="22.7203" y2="14.3383" width="0.6096" layer="1"/>
 <wire x1="20.2438" y1="16.8148" x2="20.236" y2="16.83" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TPICLK">
@@ -612,10 +616,12 @@ Toner transfer etch tuned DRU
 <wire x1="2.54" y1="21.336" x2="8.89" y2="21.336" width="0.8128" layer="1"/>
 <wire x1="23.876" y1="3.683" x2="23.368" y2="3.048" width="0.254" layer="1"/>
 <wire x1="26.4668" y1="6.5278" x2="23.876" y2="3.683" width="0.8128" layer="1"/>
-<wire x1="26.7208" y1="16.0782" x2="26.4668" y2="6.5278" width="0.8128" layer="1"/>
-<wire x1="21.3868" y1="23.4442" x2="26.7208" y2="16.0782" width="0.8128" layer="1"/>
+<wire x1="26.9748" y1="17.0942" x2="26.4668" y2="6.5278" width="0.8128" layer="1"/>
+<wire x1="21.3868" y1="23.4442" x2="26.9748" y2="17.0942" width="0.8128" layer="1"/>
 <wire x1="9.017" y1="22.9362" x2="21.3868" y2="23.4442" width="0.8128" layer="1"/>
 <wire x1="9.017" y1="22.9362" x2="8.89" y2="21.336" width="0.6096" layer="1"/>
+<contactref element="R7" pad="2"/>
+<wire x1="26.9748" y1="17.0942" x2="26.146" y2="16.002" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="R2" pad="2"/>
@@ -660,14 +666,6 @@ Toner transfer etch tuned DRU
 <wire x1="20.066" y1="21.336" x2="16.494" y2="21.336" width="0.6096" layer="1"/>
 </signal>
 </signals>
-<errors>
-<approved hash="6,1,f82195f357b8c611"/>
-<approved hash="6,1,f527b456734bcb3f"/>
-<approved hash="4,1,15d8a63c6dfe578f"/>
-<approved hash="4,1,3f6a982450e6033d"/>
-<approved hash="4,1,07c3af8c69562226"/>
-<approved hash="4,1,3bd5acdc6fee0f5c"/>
-</errors>
 </board>
 </drawing>
 </eagle>
