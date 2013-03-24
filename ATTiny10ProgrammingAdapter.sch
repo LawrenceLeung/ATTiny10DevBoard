@@ -5114,7 +5114,7 @@ wave soldering</description>
 <instance part="P+4" gate="1" x="106.68" y="30.48"/>
 <instance part="P+7" gate="1" x="93.98" y="76.2"/>
 <instance part="VDD2" gate="G$1" x="83.82" y="83.82"/>
-<instance part="R4" gate="G$1" x="7.62" y="50.8"/>
+<instance part="R4" gate="G$1" x="7.62" y="55.88"/>
 <instance part="R5" gate="G$1" x="50.8" y="83.82" rot="R90"/>
 <instance part="GND3" gate="1" x="50.8" y="43.18"/>
 <instance part="R6" gate="G$1" x="50.8" y="55.88" rot="R90"/>
@@ -5207,10 +5207,10 @@ wave soldering</description>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="0" y1="50.8" x2="2.54" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="0" y1="50.8" x2="2.54" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="12.7" y1="50.8" x2="15.24" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="50.8" x2="2.54" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="55.88" x2="15.24" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="55.88" x2="2.54" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
